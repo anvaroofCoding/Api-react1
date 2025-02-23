@@ -5,6 +5,7 @@ import App from './App'
 import './index.css'
 import Cards from './Layout/cards'
 import Blog from './pages/blog'
+import Cardabout from './pages/cardabout'
 import Products from './pages/products'
 
 createRoot(document.getElementById('root')).render(
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
 						<Route path='/' element={<Cards />} />
 					</Route>
 					<Route path='/blog' element={<Blog />}></Route>
+					<Route path='/card-about/:id' element={<Cardabout />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

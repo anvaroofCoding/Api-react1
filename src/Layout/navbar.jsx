@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/shopping.png'
 const Navbar = () => {
 	return (
@@ -7,7 +7,9 @@ const Navbar = () => {
 			<nav className='bg-black shadow-2xl'>
 				<div className='container h-[100px] flex justify-between items-center  '>
 					<div>
-						<img src={logo} alt='logo' className='w-[80px]' />
+						<Link to={'/'}>
+							<img src={logo} alt='logo' className='w-[80px]' />
+						</Link>
 					</div>
 					<ul className='text-white flex gap-[20px] font-bold uppercase'>
 						<li>
@@ -17,7 +19,7 @@ const Navbar = () => {
 									isActive ? 'text-red-400' : 'text-white'
 								}
 							>
-								Product
+								Home
 							</NavLink>
 						</li>
 						<li>
@@ -27,7 +29,7 @@ const Navbar = () => {
 									isActive ? 'text-red-400' : 'text-white'
 								}
 							>
-								Blog
+								Products
 							</NavLink>
 						</li>
 					</ul>
