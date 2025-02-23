@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+* {
+	font-family: 'Roboto', serif;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1440px;
+}
+/* ::-webkit-scrollbar {
+	background-color: silver;
+}
+::-webkit-scrollbar-thumb {
+	background-color: black;
+	border-radius: 5px;
+} */
+.roboto {
+	font-family: 'Roboto', serif !important;
+}
