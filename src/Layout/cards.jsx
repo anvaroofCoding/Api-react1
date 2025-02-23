@@ -29,7 +29,7 @@ const Cards = () => {
 			<div className='container '>
 				<h2 className='font-bold text-[24px] py-3'>Maxsulotlar:</h2>
 				<div className='w-full grid-cols-4 grid gap-4'>
-					<div className='w-full grid grid-cols-4 gap-4 min-h-[700px] col-span-3'>
+					<div className='w-full grid grid-cols-4 gap-4 min-h-[700px] col-span-4'>
 						{data.map(items => {
 							return (
 								<Link to={`/card-about/${items.id}`}>
@@ -60,7 +60,7 @@ const Cards = () => {
 							)
 						})}
 					</div>
-					<div className='w-full border border-black/30 rounded-lg col-span-1'></div>
+					{/* <div className='w-full border border-black/30 rounded-lg col-span-1'></div> */}
 				</div>
 			</div>
 		</div>
