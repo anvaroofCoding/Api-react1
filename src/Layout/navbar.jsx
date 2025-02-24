@@ -32,6 +32,16 @@ const Navbar = () => {
 								Products
 							</NavLink>
 						</li>
+						<li>
+							<NavLink
+								to='/login'
+								className={({ isActive }) =>
+									isActive ? 'text-red-400' : 'text-white'
+								}
+							>
+								Login
+							</NavLink>
+						</li>
 					</ul>
 				</div>
 			</nav>
